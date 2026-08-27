@@ -5,6 +5,7 @@ import {
   svgoOptimizer,
 } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import cloudflare from "@astrojs/cloudflare";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { unified } from "@astrojs/markdown-remark";
@@ -20,6 +21,8 @@ import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
 export default defineConfig({
+  output: "server",
+  adapter: cloudflare({ prerenderEnvironment: "node" }),
   site: config.site.url,
   integrations: [
     mdx(),
