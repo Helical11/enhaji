@@ -10,25 +10,25 @@
   --font-app: var(--font-google-sans-code);
 }
 
-/* Light theme values */
+/* Light theme values — blue accent on a warm off-white */
 :root,
 [data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
+  --background: #fffdf7;
+  --foreground: #1b2a44;
+  --accent: #39619f;
   --accent-foreground: #ffffff;
-  --muted: #e6e6e6;
-  --muted-foreground: #6b7280;
-  --border: #ece9e9;
+  --muted: #fdeecb;
+  --muted-foreground: #505f79;
+  --border: #ece2c9;
 }
 
-/* Dark theme values */
+/* Dark theme values — yellow accent on deep navy */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
-  --border: #ab4b08;
+  --background: #182339;
+  --foreground: #eef1f7;
+  --accent: #f7dd7d;
+  --accent-foreground: #1b2a44;
+  --muted: #2a3a58;
+  --muted-foreground: #a9b7d2;
+  --border: #33456a;
 }
