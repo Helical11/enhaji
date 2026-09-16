@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     author: "へりかる",
     profile: "",
     ogImage: "default-og.jpg",
-    lang: "en",
+    lang: "ja",
     timezone: "Asia/Tokyo",
     dir: "ltr",
   },
